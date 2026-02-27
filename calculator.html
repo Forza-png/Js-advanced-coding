@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        </head>
+    <body>
+        <div class="Calculator">
+            <div class="grid">
+                <!--Display-->
+                <input id="result" type="text" placeholder="result" readonly>
+                <!--Buttons-->
+                <button class="btn" onclick="setscreenValue('+')">+</button>
+                <!--Row 1-->
+                <button class ="btn" onclick="setscreenValue('1')">1</button>
+                <button class ="btn" onclick="setscreenValue('2')">2</button>
+                <button class ="btn" onclick="setscreenValue('3')">3</button>
+                <button class="btn op" onclick="setscreenValue('-')">-</button>
+                <!--Row 2-->
+                <button class ="btn" onclick="setscreenValue('4')">4</button>
+                <button class ="btn" onclick="setscreenValue('5')">5</button>
+                <button class ="btn" onclick="setscreenValue('6')">6</button>
+                <button class="btn op" onclick="setscreenValue('*')">*</button>
+                <!--Row 3-->
+                <button class ="btn" onclick="setscreenValue('7')">7</button>
+                <button class ="btn" onclick="setscreenValue('8')">8</button>
+                <button class ="btn" onclick="setscreenValue('9')">9</button>
+                <button class="btn op" onclick="setscreenValue('/')">/</button>
+                <!--Row 4-->
+                <button class ="btn" onclick="setscreenValue('0')">0</button>
+                <button class ="btn" onclick="setscreenValue('.')">.</button>
+                <button class="btn op" onclick="calculateResult()">=</button> 
+                </div>
+                <button class="btn clear" onclick="clearScreen()">C</button>
+        </div>
+        <script src="app.js"></script>
+        </body>
+</html>

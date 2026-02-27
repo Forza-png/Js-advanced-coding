@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Enter your API key:</p>
+
+        <input id="id" type="number" min="100" max="300" required>
+        <button onclick="MyFunction()">OK</button>
+        <p>If the number is less than 100 or greater than 300, an error message will be displayed.</p>
+
+
+<p id="result"></p>
+
+<script>
+function MyFunction() {
+    var inopbject = document.getElementById("id");
+
+    if (inopbject.checkValidity()) {
+        document.getElementById("result").innerHTML = inopbject.validationMessage;
+ } else {
+    document.getElementById("result").innerHTML = "Input ok";}
+ }
+ </script>
+    </body>
+</html>
